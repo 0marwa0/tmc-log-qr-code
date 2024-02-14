@@ -95,3 +95,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setInterval(repeatAnimation, 13000);
 });
+
+window.addEventListener('resize', function () {
+  var windowWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  var windowHeight =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight;
+
+  console.log('Updated Window Width: ' + windowWidth);
+  console.log('Updated Window Height: ' + windowHeight);
+});
